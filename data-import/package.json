@@ -1,0 +1,23 @@
+{
+  "name": "aqi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_EXTRA_CA_CERTS='./cacert.pem' lambda-local -l index.js -t 600 -e event.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "knex": "^0.16.3",
+    "moment-timezone": "^0.5.23",
+    "pg": "^7.8.0",
+    "request": "^2.88.0",
+    "ssl-root-cas": "^1.2.5"
+  },
+  "devDependencies": {
+    "lambda-local": "^1.5.2"
+  }
+}
